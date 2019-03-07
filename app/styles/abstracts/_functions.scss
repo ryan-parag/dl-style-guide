@@ -1,0 +1,17 @@
+@function transparentColor($color) {
+  @return transparentize($color, .85);
+}
+
+@function darkenColor($color) {
+  @return darken($color, 10%);
+}
+
+@mixin fadeUp {
+  opacity: 0;
+  position: relative;
+  animation: fadeUp 300ms ease 200ms forwards;
+}
+
+@mixin transition {
+  transition: all 200ms ease;
+}

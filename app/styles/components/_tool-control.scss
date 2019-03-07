@@ -1,0 +1,13 @@
+.tool-control {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  display: inline-block;
+  color: $color-gray-500;
+  transition: all 200ms ease;
+
+  &:hover,
+  &:focus {
+    color: $color-gray-800;
+    transition: all 200ms ease;
+  }
+}

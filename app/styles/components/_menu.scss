@@ -1,0 +1,15 @@
+.menu {
+	a {
+		padding: .5rem .2rem;
+		display: block;
+		text-decoration: none;
+		color: $color-gray-600;
+		&:hover, &:focus {
+			color: $primary;
+      background: transparentize($color-black, .95);
+		}
+	}
+	li ol, li ul {
+		font-size: .84em;
+	}
+}

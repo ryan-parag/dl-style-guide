@@ -1,9 +1,9 @@
 {
-  "name": "webpack-pug-scss-boiperplate",
+  "name": "disputelab-style-guide",
   "version": "2.1.3",
-  "description": "A webpack boilerplate for building web apps",
+  "description": "Simple guide documenting the basic styles of DisputeLab",
   "main": "./app/scripts/index.js",
-  "author": "Alex Nozdriukhin",
+  "author": "Ryan Parag",
   "license": "MIT",
   "scripts": {
     "analyze": "webpack-bundle-analyzer ./stats.json",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexnoz/webpack-pug-scss-boilerplate.git"
+    "url": "https://github.com/ryan-parag/dl-style-guide.git"
   },
   "keywords": [
     "boilerplate",

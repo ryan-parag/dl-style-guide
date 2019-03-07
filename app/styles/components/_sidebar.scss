@@ -1,0 +1,64 @@
+.sidebar {
+	$sidebar-width: 300px;
+	width: 100%;
+	max-width: $sidebar-width;
+	height: 100%;
+  align-self: stretch;
+	box-shadow: 15px 0px 25px rgba($color-black, .08), 5px 0px 12px rgba($color-black, .05);
+	background: $color-white;
+	position: fixed;
+  z-index: 100;
+  overflow-y: auto;
+	@include transition;
+	@media screen and (max-width: $content-breakpoint) {
+		position: fixed;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		&.is-closed {
+			left: -$sidebar-width - 20px;
+		}
+	}
+	&__header, &__body, &__footer {
+		padding: 1rem;
+		position: relative;
+	}
+	&__footer {
+		border-top: 1px solid rgba($color-black, .2);
+	}
+	&__header {
+		border-bottom: 1px solid rgba($color-black, .2);
+	}
+	&__close {
+		$size: 50px;
+    z-index: 120;
+		position: fixed;
+		right: $size/2;
+		bottom: 1rem;
+		transform: rotate(180deg);
+		background: $primary;
+		color: $color-white;
+		width: $size;
+		height: $size;
+		line-height: 1;
+		border-radius: 50%;
+		box-shadow: 0px 4px 12px rgba($color-black, .12);
+		display: none;
+		cursor: pointer;
+    border: 0;
+		&:focus, &:active {
+			outline: 0;
+		}
+		&:hover {
+			width: $size*1.1;
+			height: $size*1.1;
+		}
+    &.is-closed {
+      transform: rotate(0deg);
+    }
+		@include transition;
+		@media screen and (max-width: $content-breakpoint) {
+			display: inline-block;
+		}
+	}
+}

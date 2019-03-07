@@ -1,0 +1,56 @@
+.tile-container {
+  margin-bottom: 3rem;
+
+  .tile {
+    border-bottom: 1px solid transparent;
+
+    &:first-of-type {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+
+    &:last-of-type {
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      border-bottom: 1px solid rgba($color-black, 0.2);
+    }
+  }
+}
+
+.tile {
+  padding: $padding;
+  background: $color-white;
+  margin: 0;
+  border: 1px solid rgba($color-black, .2);
+  border-left: 5px solid $color-gray-300;
+  box-shadow: 0px 12px 20px rgba($color-black, 0.06), 0px 3px 6px rgba($color-black, 0.06);
+  transition: all 200ms ease;
+
+  &--primary {
+    border-left: 5px solid $primary;
+  }
+
+  &--warning {
+    border-left: 5px solid $warning;
+  }
+
+  &--success {
+    border-left: 5px solid $success;
+  }
+
+  &--danger {
+    border-left: 5px solid $danger;
+  }
+
+  &--info {
+    border-left: 5px solid $info;
+  }
+
+  &__right {
+    float: right;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,6 +1,9 @@
-@import 'fonts';
+///////////////////////////////////
+// DisputeLab Light UI
+///////////////////////////////////
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
-}
+@import 'abstracts/index';
+@import 'base/index';
+@import 'components/index';
+@import 'utilities/index';
+@import 'docs/index';
