@@ -1,8 +1,8 @@
-@function transparentColor($color) {
+@function transparentcolor($color) {
   @return transparentize($color, .85);
 }
 
-@function darkenColor($color) {
+@function darkencolor($color) {
   @return darken($color, 10%);
 }
 

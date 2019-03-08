@@ -1,0 +1,200 @@
+.container
+	.row
+		.col-12
+			h1 Lightweight Style Guide
+			p Below are the basic styles used to create assets for DisputeLab: Logo, Colors, Typography, etc.
+			p While the design of the UI may be constantly changing in both large and small ways, these static design tokens that form the core building blocks of DisputeLab's design should remain constant and will affect every piece of UI within the DisputeLab ecosystem.
+	.row
+		.col-12
+			.tile.u-m-bottom--lg
+				h2 Logo
+				figure.center.u-m-bottom
+					img(width="300" src="images/logo/disputelab_logo.svg")
+					figcaption
+						small.u-text--secondary Full Color
+				figure.center.u-m-bottom.u-bg--dark.u-p-top.u-p-bottom
+					img(width="300" src="images/logo/disputelab_logo_inverse.svg")
+					figcaption
+						small.u-text--secondary Inverse Full Color
+				figure.center.u-m-bottom.u-bg--dark.u-p-top.u-p-bottom
+					img(width="300" src="images/logo/disputelab_logo_white.svg")
+					figcaption
+						small.u-text--secondary Single Color Inverse
+				figure.center.u-m-bottom
+					img(width="100" src="images/logo/disputelab_favicon_32x32.svg")
+					figcaption
+						small.u-text--secondary Full Color Icon
+	.row
+		.col-12
+			.tile.u-m-bottom--lg
+				h2 Colors
+				h5 Element/State Colors
+				.swatch__container
+					.swatch
+						.swatch__color.u-bg--primary
+							.swatch__label.u-text--white Primary
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #3870c4
+							.u-text--secondary VAR: $color-blue
+					.swatch
+						.swatch__color.u-bg--danger
+							.swatch__label.u-text--white Danger
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #3870c4
+							.u-text--secondary VAR: $color-red
+					.swatch
+						.swatch__color.u-bg--success
+							.swatch__label.u-text--white Success
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #3870c4
+							.u-text--secondary VAR: $color-green
+					.swatch
+						.swatch__color.u-bg--warning
+							.swatch__label.u-text--white Warning
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #3870c4
+							.u-text--secondary VAR: $color-orange
+					.swatch
+						.swatch__color.u-bg--info
+							.swatch__label.u-text--white Info
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #3870c4
+							.u-text--secondary VAR: $color-teal
+				h5 Base Colors
+				.swatch__container
+					.swatch
+						.swatch__color.u-bg--black
+							.swatch__label.u-text--white Black
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #000000
+							.u-text--secondary VAR: $color-black
+					.swatch
+						.swatch__color.u-bg--white
+							.swatch__label.u-text--dark White
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #FFFFFF
+							.u-text--secondary VAR: $color-white
+					.swatch
+						.swatch__color.u-bg--gray-900
+							.swatch__label.u-text--white Gray 900
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #1f2024
+							.u-text--secondary VAR: $color-gray-900
+					.swatch
+						.swatch__color.u-bg--gray-800
+							.swatch__label.u-text--white Gray 800
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #2f3036
+							.u-text--secondary VAR: $color-gray-800
+					.swatch
+						.swatch__color.u-bg--gray-700
+							.swatch__label.u-text--white Gray 700
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #57595f
+							.u-text--secondary VAR: $color-gray-700
+					.swatch
+						.swatch__color.u-bg--gray-600
+							.swatch__label.u-text--white Gray 600
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #77787c
+							.u-text--secondary VAR: $color-gray-600
+					.swatch
+						.swatch__color.u-bg--gray-500
+							.swatch__label.u-text--white Gray 500
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #afafaf
+							.u-text--secondary VAR: $color-gray-500
+					.swatch
+						.swatch__color.u-bg--gray-400
+							.swatch__label.u-text--white Gray 400
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #b9babe
+							.u-text--secondary VAR: $color-gray-400
+					.swatch
+						.swatch__color.u-bg--gray-300
+							.swatch__label.u-text--dark Gray 300
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #cfd0d4
+							.u-text--secondary VAR: $color-gray-300
+					.swatch
+						.swatch__color.u-bg--gray-200
+							.swatch__label.u-text--dark Gray 200
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #e5e6ea
+							.u-text--secondary VAR: $color-gray-200
+					.swatch
+						.swatch__color.u-bg--gray-100
+							.swatch__label.u-text--dark Gray 100
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #edf1f5
+							.u-text--secondary VAR: $color-gray-100
+				h5 Tertiary Colors
+				.swatch__container
+					.swatch
+						.swatch__color.u-bg--sepia
+							.swatch__label.u-text--white Sepia
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #96622d
+							.u-text--secondary VAR: $data-sepia
+					.swatch
+						.swatch__color.u-bg--lime
+							.swatch__label.u-text--white Lime
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #9bbf30
+							.u-text--secondary VAR: $data-lime
+					.swatch
+						.swatch__color.u-bg--turquoise
+							.swatch__label.u-text--white Turquoise
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #00b3a4
+							.u-text--secondary VAR: $data-turquoise
+					.swatch
+						.swatch__color.u-bg--indigo
+							.swatch__label.u-text--white Indigo
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #0e5a8a
+							.u-text--secondary VAR: $data-indigo
+					.swatch
+						.swatch__color.u-bg--rose
+							.swatch__label.u-text--white Rose
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #db2c6f
+							.u-text--secondary VAR: $data-rose
+					.swatch
+						.swatch__color.u-bg--gold
+							.swatch__label.u-text--white Gold
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #d99e0b
+							.u-text--secondary VAR: $data-gold
+					.swatch
+						.swatch__color.u-bg--forest
+							.swatch__label.u-text--white Forest
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #29a634
+							.u-text--secondary VAR: $data-forest
+					.swatch
+						.swatch__color.u-bg--cobalt
+							.swatch__label.u-text--white Cobalt
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #2965cc
+							.u-text--secondary VAR: $data-cobalt
+					.swatch
+						.swatch__color.u-bg--violet
+							.swatch__label.u-text--white Violet
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #8f398f
+							.u-text--secondary VAR: $data-violet
+					.swatch
+						.swatch__color.u-bg--vermillion
+							.swatch__label.u-text--white Vermillion
+						.swatch__content
+							.u-text--secondary.u-m-bottom--sm HEX: #d13913
+							.u-text--secondary VAR: $data-vermillion
+
+	.row
+		.col-12
+			.tile.u-m-bottom--lg
+				h2 Typography
+				.tile.tile--primary
+					span Typeface:  
+					strong Lato
