@@ -21,6 +21,40 @@
 		width: 100%;
 		position: relative;
 	}
+	&__button {
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		font-family: inherit;
+		font-size: 0.85rem;
+		border: 0;
+		padding: 0.5rem 1rem;
+		background: rgba($color-black, .6);
+		color: $color-white;
+		position: relative;
+		cursor: pointer;
+		transition: all 0.1s ease-out 0s;
+		border-radius: 0.3rem;
+		input {
+			position: absolute;
+			opacity: 0;
+			width: 1px;
+			height: 1px;
+		}
+		&:focus, &:active {
+			outline: 0;
+			box-shadow: 0px 0px 0px 3px rgba($color-blue, .3);
+			opacity: 0.8;
+		}
+		&:active {
+			transform: translate(-50%, -50%,) scale(0.95);
+		}
+		&:hover {
+			box-shadow: 0px 3px 6px rgba($color-black, .1);
+		}
+	}
 	&__content {
 		padding: 1rem;
 		font-size: 80%;
@@ -30,5 +64,10 @@
 		bottom: 1rem;
 		left: 1rem;
 		font-weight: 700;
+	}
+	&:hover, &:focus {
+		.swatch__button {
+			opacity: 1;
+		}
 	}
 }
