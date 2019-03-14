@@ -1,0 +1,37 @@
+.button {
+    font-family: inherit;
+    border: 0;
+    background: $color-gray-200;
+    color: $color-gray-600;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: $border-radius;
+    &--primary {
+        background: $primary;
+        color: $color-white;
+    }
+    &--danger {
+        background: $danger;
+        color: $color-white;
+    }
+    &--success {
+        background: $success;
+        color: $color-white;
+    }
+    &--warning {
+        background: $warning;
+        color: $color-white;
+    }
+    &--info {
+        background: $info;
+        color: $color-white;
+    }
+    &:focus, &:active {
+        outline: 0;
+        box-shadow: 0px 0px 0px 3px rgba($primary, .4);
+    }
+    &:hover, &:focus {
+        opacity: .8;
+    }
+}
